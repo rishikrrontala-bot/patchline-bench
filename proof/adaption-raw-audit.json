@@ -1,0 +1,12 @@
+{
+  "rows": 1000,
+  "originalPairsExactlyPreserved": true,
+  "enhancedPairsExactlyPreserved": false,
+  "exportFields": [
+    "original_prompt",
+    "original_completion",
+    "enhanced_prompt",
+    "enhanced_completion"
+  ],
+  "noClinicalValidation": true
+}

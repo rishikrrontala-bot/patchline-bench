@@ -1,0 +1,42 @@
+{
+  "board": "esp32:esp32:adafruit_feather_esp32s3_nopsram",
+  "core": "3.3.12",
+  "cli": "1.5.2-rc.1",
+  "flashed": false,
+  "hardwareTested": false,
+  "modes": {
+    "simulation": {
+      "compiled": true,
+      "flashBytes": 389350,
+      "globalRAMBytes": 55896,
+      "binarySHA256": "484a35f5b1b3463253970863203b5969bcff34db7f6b967aa92d6192d5d21883"
+    },
+    "bench": {
+      "compiled": true,
+      "flashBytes": 385074,
+      "globalRAMBytes": 55896,
+      "binarySHA256": "e24b30444b199694558ef5e8094103deb8dbf0098e156612cf28b43414fdc230"
+    }
+  },
+  "hostVerification": {
+    "command": "node --test tests/hardware.test.mjs",
+    "passedGroups": 3,
+    "physicalHardware": false,
+    "cases": [
+      "failed transactions",
+      "short reads",
+      "ADC polling deadline",
+      "ADC deadline across uint32 rollover",
+      "signed ADC and temperature decoding",
+      "three channel mux/PGA/configuration words",
+      "wrong TMP117 identity",
+      "out-of-range temperatures",
+      "unreviewed calibration",
+      "both modes telemetry provenance and no actuation"
+    ]
+  },
+  "firmwareSourcesSHA256": {
+    "patchline_bench.ino": "4d87e5294a8deedcbcc4996b3448e560225565b2f478d2f885645923c7a02a00",
+    "bench_core.h": "d941dab1985abc168ae4802867fca91292e4ae5e3e8330bf0653759d71f9ef2e"
+  }
+}

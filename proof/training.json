@@ -1,0 +1,278 @@
+{
+  "schema": "patchline-bench-training-proof-v1",
+  "trainingRuns": 1200,
+  "validationRuns": 300,
+  "heldOutRuns": 300,
+  "uniqueRunSeeds": 1800,
+  "splitPolicy": "Run-level independent seeds; scaler fitted to training only; epoch selected on validation; held-out test used once for report",
+  "heldOutAccuracy": 0.8966666666666666,
+  "macroF1": 0.894122971046048,
+  "perClassF1": {
+    "steady": 0.8658008658008658,
+    "shift": 1.0,
+    "sensor_fault": 0.8165680473372781
+  },
+  "confusionMatrix": [
+    [
+      100,
+      0,
+      0
+    ],
+    [
+      0,
+      100,
+      0
+    ],
+    [
+      31,
+      0,
+      69
+    ]
+  ],
+  "selectedEpoch": 590,
+  "history": [
+    {
+      "epoch": 0,
+      "validationLoss": 0.8796146966637396
+    },
+    {
+      "epoch": 10,
+      "validationLoss": 0.5333659709134936
+    },
+    {
+      "epoch": 20,
+      "validationLoss": 0.4494966033777813
+    },
+    {
+      "epoch": 30,
+      "validationLoss": 0.4037404971926373
+    },
+    {
+      "epoch": 40,
+      "validationLoss": 0.37139867267082993
+    },
+    {
+      "epoch": 50,
+      "validationLoss": 0.3461403867966176
+    },
+    {
+      "epoch": 60,
+      "validationLoss": 0.32555761164013985
+    },
+    {
+      "epoch": 70,
+      "validationLoss": 0.3084695969713099
+    },
+    {
+      "epoch": 80,
+      "validationLoss": 0.2941694998545063
+    },
+    {
+      "epoch": 90,
+      "validationLoss": 0.28215966440777546
+    },
+    {
+      "epoch": 100,
+      "validationLoss": 0.2720492094323552
+    },
+    {
+      "epoch": 110,
+      "validationLoss": 0.26351440174708063
+    },
+    {
+      "epoch": 120,
+      "validationLoss": 0.2562832772656368
+    },
+    {
+      "epoch": 130,
+      "validationLoss": 0.25012833157861775
+    },
+    {
+      "epoch": 140,
+      "validationLoss": 0.24486111281837714
+    },
+    {
+      "epoch": 150,
+      "validationLoss": 0.24032696787492738
+    },
+    {
+      "epoch": 160,
+      "validationLoss": 0.23639982430898357
+    },
+    {
+      "epoch": 170,
+      "validationLoss": 0.23297728299596693
+    },
+    {
+      "epoch": 180,
+      "validationLoss": 0.2299762541639853
+    },
+    {
+      "epoch": 190,
+      "validationLoss": 0.22732923884464298
+    },
+    {
+      "epoch": 200,
+      "validationLoss": 0.2249812533801842
+    },
+    {
+      "epoch": 210,
+      "validationLoss": 0.22288733572687625
+    },
+    {
+      "epoch": 220,
+      "validationLoss": 0.22101054863327255
+    },
+    {
+      "epoch": 230,
+      "validationLoss": 0.21932039222942257
+    },
+    {
+      "epoch": 240,
+      "validationLoss": 0.21779154646491244
+    },
+    {
+      "epoch": 250,
+      "validationLoss": 0.2164028756465959
+    },
+    {
+      "epoch": 260,
+      "validationLoss": 0.21513663957493245
+    },
+    {
+      "epoch": 270,
+      "validationLoss": 0.21397786686902748
+    },
+    {
+      "epoch": 280,
+      "validationLoss": 0.21291385545003222
+    },
+    {
+      "epoch": 290,
+      "validationLoss": 0.21193377278102712
+    },
+    {
+      "epoch": 300,
+      "validationLoss": 0.2110283345220512
+    },
+    {
+      "epoch": 310,
+      "validationLoss": 0.2101895450059438
+    },
+    {
+      "epoch": 320,
+      "validationLoss": 0.20941048662795356
+    },
+    {
+      "epoch": 330,
+      "validationLoss": 0.20868514809351724
+    },
+    {
+      "epoch": 340,
+      "validationLoss": 0.2080082836697828
+    },
+    {
+      "epoch": 350,
+      "validationLoss": 0.20737529728576828
+    },
+    {
+      "epoch": 360,
+      "validationLoss": 0.20678214663976865
+    },
+    {
+      "epoch": 370,
+      "validationLoss": 0.2062252634906011
+    },
+    {
+      "epoch": 380,
+      "validationLoss": 0.2057014871004454
+    },
+    {
+      "epoch": 390,
+      "validationLoss": 0.20520800841404602
+    },
+    {
+      "epoch": 400,
+      "validationLoss": 0.20474232304204285
+    },
+    {
+      "epoch": 410,
+      "validationLoss": 0.20430219149579473
+    },
+    {
+      "epoch": 420,
+      "validationLoss": 0.20388560542062037
+    },
+    {
+      "epoch": 430,
+      "validationLoss": 0.20349075881175963
+    },
+    {
+      "epoch": 440,
+      "validationLoss": 0.2031160233862633
+    },
+    {
+      "epoch": 450,
+      "validationLoss": 0.20275992743496735
+    },
+    {
+      "epoch": 460,
+      "validationLoss": 0.2024211375998422
+    },
+    {
+      "epoch": 470,
+      "validationLoss": 0.20209844311960232
+    },
+    {
+      "epoch": 480,
+      "validationLoss": 0.20179074216542256
+    },
+    {
+      "epoch": 490,
+      "validationLoss": 0.20149702995273605
+    },
+    {
+      "epoch": 500,
+      "validationLoss": 0.20121638836738232
+    },
+    {
+      "epoch": 510,
+      "validationLoss": 0.20094797688717259
+    },
+    {
+      "epoch": 520,
+      "validationLoss": 0.20069102461510352
+    },
+    {
+      "epoch": 530,
+      "validationLoss": 0.20044482326944096
+    },
+    {
+      "epoch": 540,
+      "validationLoss": 0.20020872099988668
+    },
+    {
+      "epoch": 550,
+      "validationLoss": 0.19998211691895823
+    },
+    {
+      "epoch": 560,
+      "validationLoss": 0.19976445625430744
+    },
+    {
+      "epoch": 570,
+      "validationLoss": 0.19955522604157194
+    },
+    {
+      "epoch": 580,
+      "validationLoss": 0.19935395128898417
+    },
+    {
+      "epoch": 590,
+      "validationLoss": 0.19916019155474385
+    }
+  ],
+  "seconds": 0.22282079100841656,
+  "modelSHA256": "f5a4a38f2a92944426aa55fa36721701f99b179aa4a8adee6c10efdf4592489f",
+  "scope": "Classifies injected simulator families. Probabilities are not clinical infection risk. No therapy output."
+}

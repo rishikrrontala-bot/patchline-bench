@@ -1,0 +1,53 @@
+{
+  "nets": [
+    {
+      "net": "GND",
+      "pads": 7,
+      "connected": true,
+      "layerAware": true
+    },
+    {
+      "net": "+3V3",
+      "pads": 6,
+      "connected": true,
+      "layerAware": true
+    },
+    {
+      "net": "SDA",
+      "pads": 3,
+      "connected": true,
+      "layerAware": true
+    },
+    {
+      "net": "SCL",
+      "pads": 3,
+      "connected": true,
+      "layerAware": true
+    },
+    {
+      "net": "PH_SIG",
+      "pads": 2,
+      "connected": true,
+      "layerAware": true
+    },
+    {
+      "net": "MOIST_SIG",
+      "pads": 2,
+      "connected": true,
+      "layerAware": true
+    },
+    {
+      "net": "GLUCOSE_SIG",
+      "pads": 2,
+      "connected": true,
+      "layerAware": true
+    }
+  ],
+  "pads": 25,
+  "tracks": 31,
+  "shortCenterlinesDetected": 0,
+  "conservativeCopperGapMm": 0.74,
+  "minimumRequiredGapMm": 0.25,
+  "padGapMethod": "All pads conservatively bounded by 1.8 mm squares; same-layer copper tracks include their widths.",
+  "scope": "Custom layer-aware connectivity, centerline and geometric copper-gap checks only. Not KiCad DRC/ERC, clearance certification, electrical or manufacturing validation."
+}

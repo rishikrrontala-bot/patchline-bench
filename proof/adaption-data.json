@@ -1,0 +1,7 @@
+{
+  "rows": 1000,
+  "origin": "Existing training partition only",
+  "purpose": "Fine-tune a nonclinical evidence summarizer, not the numerical classifier",
+  "labels": "Deterministic quality policy; no clinical labels",
+  "heldOutDataUploaded": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "patchline-bench-data-v1",
+  "provenance": "synthetic",
+  "labels": "Injected simulator family only, not infection/physiology",
+  "splitPolicy": "Avalanche-mixed unique seeded runs; adjacent IDs cannot encode family baselines. Distinct seeded runs. No row-level random split. Features exclude metadata and family labels.",
+  "splits": {
+    "train": {
+      "runs": 1200,
+      "runsPerFamily": 400,
+      "startSeed": 10001
+    },
+    "validation": {
+      "runs": 300,
+      "runsPerFamily": 100,
+      "startSeed": 1000001
+    },
+    "test": {
+      "runs": 300,
+      "runsPerFamily": 100,
+      "startSeed": 2000001
+    }
+  }
+}

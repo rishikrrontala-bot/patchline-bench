@@ -1,0 +1,29 @@
+{
+  "updatedUTC": "2026-10-14T17:30:44.992386+00:00",
+  "scope": "Nonclinical dry-bench prototype",
+  "nodeTestsPassed": 30,
+  "adaptionWorkflowChecksPassed": 9,
+  "firmwareModesCompiled": [
+    "simulation",
+    "bench"
+  ],
+  "physicalHardwareTested": false,
+  "pcbDRCRun": false,
+  "localSyntheticAccuracy": 0.8966666666666666,
+  "explodedViewImplemented": true,
+  "browserVerifiedWidth": 521,
+  "motionEvidence": "proof/exploded-view.gif",
+  "adaptionTrainingStarted": false,
+  "adaptionBlocker": "Provider quote requires unlocked Safari; user unlock requested",
+  "featherlessEstimatedCumulativeUSD": 0.5811,
+  "overnightContinuationEnabled": true,
+  "nextActions": [
+    "Get exact Adaption training quote within100 credits; launch guarded single run only if total within cap",
+    "Verify trained summarizer outputs against independent structured-output hold/review fixtures if training succeeds",
+    "Finish continuous muted demo with user voiceover",
+    "Preserve Next Founders original submission deadline and edition"
+  ],
+  "portableArtifact": "artifacts/Patchline-Bench-v2.html",
+  "portableBrowserVerification": "Direct file URL refused by browser policy; source app verified via normal localhost preview",
+  "explodedViewRevision": "Reference-style six-layer pale enclosure study, navy backdrop, numbered leaders and separate actual PCB"
+}
