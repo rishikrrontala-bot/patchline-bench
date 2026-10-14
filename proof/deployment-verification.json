@@ -1,5 +1,5 @@
 {
-  "checkedUTC": "2026-10-14T21:35:18.885800+00:00",
+  "checkedUTC": "2026-10-14T21:41:07.810762+00:00",
   "url": "https://patchline-bench.vercel.app/",
   "httpStatus": 200,
   "requiresSignIn": false,
@@ -13,7 +13,30 @@
   "adaptionTrainingStarted": false,
   "CI": {
     "status": "success",
-    "url": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38641236912"
+    "testedCodeCommit": "f4eee1d1de32fa5c05d751860c56fc8a99b7b7b8",
+    "url": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38641876727"
   },
-  "gitAutoDeployConnected": true
+  "gitAutoDeployConnected": true,
+  "nodeTestsPassed": 31,
+  "adaptionWorkflowChecksPassed": 10,
+  "privateRoutes": [
+    {
+      "path": "/.env.local",
+      "status": 404
+    },
+    {
+      "path": "/.secrets/adaption.env",
+      "status": 404
+    },
+    {
+      "path": "/.vercel/project.json",
+      "status": 404
+    }
+  ],
+  "publicModelFilesStatus": 200,
+  "desktopViewport": [
+    1280,
+    720
+  ],
+  "explodedLayerBottomsWithinStage": true
 }
