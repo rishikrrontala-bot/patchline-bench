@@ -13,3 +13,7 @@ Read [LIMITATIONS.md](LIMITATIONS.md), [hardware/WIRING.md](hardware/WIRING.md) 
 Featherless GLM 5.2 supplied an initial simulator implementation; it was corrected and tested locally. Featherless DeepSeek-V3.2 supplied an independent firmware review; verified findings and rejected errors are recorded under proof/. Secrets stay outside this project. The shared cumulative Featherless cap is $10; current conservative ledger estimate approximately $0.5811. Adaption is limited to 100 existing credits, with no purchases. Its proposed job fine-tunes a bench evidence summarizer; the numerical model above is already trained locally. Cloud training status is tracked separately and must not be represented as complete before confirmation.
 
 The exploded assembly uses original vector illustrations, with real hub routing underneath. Its scroll and keyboard controls have a static reduced-motion fallback. A standalone version is packaged at `artifacts/Patchline-Bench.html`; direct browser testing of that file was blocked by the browser file-URL policy, while the source app was verified through its normal local preview.
+
+## Devpost draft
+
+The local story is in [devpost-submission.md](devpost-submission.md). It separates working software from proposed business features, unassembled hardware, and the pending Adaption training experiment. Final event entry and the public five-minute voiceover video remain separate steps.

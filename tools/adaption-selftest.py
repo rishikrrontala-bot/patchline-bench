@@ -36,6 +36,10 @@ class BoundaryTests(unittest.TestCase):
     def test_redirect_is_refused(self):
         with self.assertRaisesRegex(RuntimeError,'Redirect refused'):
             api.NoRedirect().redirect_request(None,None,302,'',{},'https://other.example/')
+    def test_tls_uses_platform_trust_when_macos_bundle_is_absent(self):
+        with patch.object(api.Path,"is_file",return_value=False),patch.object(api.ssl,"create_default_context") as create:
+            api.tls_context();create.assert_called_once_with()
+
     def test_http_error_redacts_key(self):
         secret='PRIVATE_TEST_CREDENTIAL'
         error=urllib.error.HTTPError(api.BASE+'datasets',401,'',{},io.BytesIO(('Rejected '+secret).encode()))

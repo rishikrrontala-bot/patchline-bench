@@ -20,3 +20,5 @@ proof/adaption-price-quote.json
 proof/adaption-launch-claim.json
 proof/adaption-run.json
 proof/adaption-recommendation.json
+.vercel
+.env*

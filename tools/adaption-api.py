@@ -18,11 +18,15 @@ def credential():
     if not key: raise RuntimeError('Private credential not configured')
     return key
 
+def tls_context():
+    bundle = Path("/etc/ssl/cert.pem")
+    return ssl.create_default_context(cafile=str(bundle)) if bundle.is_file() else ssl.create_default_context()
+
 def request(path, body=None, method=None):
     key = credential()
     req = urllib.request.Request(BASE + path, data=json.dumps(body).encode() if body is not None else None,
         method=method, headers={'Authorization': 'Bearer '+key, 'Accept': 'application/json', 'Content-Type':'application/json'})
-    opener = urllib.request.build_opener(NoRedirect(), urllib.request.HTTPSHandler(context=ssl.create_default_context(cafile='/etc/ssl/cert.pem')))
+    opener = urllib.request.build_opener(NoRedirect(), urllib.request.HTTPSHandler(context=tls_context()))
     try:
         with opener.open(req, timeout=45) as response: return json.load(response)
     except urllib.error.HTTPError as error:
@@ -58,7 +62,7 @@ def upload():
     if parsed.scheme!='https' or not (parsed.hostname or '').endswith('.amazonaws.com') or info['method']!='PUT': raise RuntimeError('Unexpected presigned upload destination')
     # Presigned S3 upload gets file bytes only, never the Adaption bearer credential.
     req=urllib.request.Request(info['url'],data=content,method='PUT',headers={'Content-Type':'application/octet-stream'})
-    opener=urllib.request.build_opener(NoRedirect(),urllib.request.HTTPSHandler(context=ssl.create_default_context(cafile='/etc/ssl/cert.pem')))
+    opener=urllib.request.build_opener(NoRedirect(),urllib.request.HTTPSHandler(context=tls_context()))
     st={'dataset_id':created['dataset_id'],'rows':len(rows),'sha256':hashlib.sha256(content).hexdigest(),'bytes':len(content),'processing_mode':'raw','training_started':False,'credit_cap':100}
     save('raw-state',st)
     try:
