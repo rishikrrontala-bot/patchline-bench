@@ -1,7 +1,7 @@
 # Patchline Bench
 
 ## One-line summary
-An open-source workbench for smart-bandage research: inspect a sensing board, simulate four signal channels, and test a local AI model before trusting its output.
+An inspectable research workbench for smart-bandage research: inspect a sensing board, simulate four signal channels, and test a local AI model before trusting its output.
 
 ## Inspiration
 I started with a smart-bandage idea: could a patch monitor signals around a diabetic wound and eventually help guide care? Building that responsibly starts with a smaller question: what do the sensors actually measure, and when should the system refuse to act?
@@ -36,7 +36,7 @@ I also uploaded 1,000 verified instruction pairs to Adaption for a separate nonc
 ## Technical evidence
 The held-out synthetic model accuracy is **89.7%**, with **89.4% macro F1**. The confusion matrix is published. It correctly identified all 100 steady and all 100 coordinated-shift test windows, but classified 31 of 100 injected sensor faults as steady. This is a material limitation, not a clinical accuracy claim.
 
-**30 automated project tests** cover deterministic generation, malformed inputs, missing data, analytic feature calculations, independent run seeds, training-only normalization, Python/JavaScript inference agreement, review-state resets, telemetry discontinuities, scroll controls and firmware transport failures.
+**31 automated project tests** cover deterministic generation, malformed inputs, missing data, analytic feature calculations, independent run seeds, training-only normalization, Python/JavaScript inference agreement, review-state resets, telemetry discontinuities, scroll controls and firmware transport failures.
 
 **10 additional offline Adaption workflow checks** cover credential redaction, redirects, exact training configuration, credit caps, stale quotes and duplicate-job prevention. They make no paid provider requests.
 
@@ -81,7 +81,7 @@ JavaScript, HTML, CSS, SVG, Python, NumPy, C++, Arduino, ESP32-S3, ADS1115, TMP1
 https://github.com/rishikrrontala-bot/patchline-bench
 
 ## Public demo
-Deployment verification is in progress. Add the verified public URL before posting.
+https://patchline-bench.vercel.app/ — public access and core dashboard flow verified.
 
 ## Demo video
 A public or unlisted five-minute working demo with voiceover is still required for Next Founders. The saved GIF is a preview of actual browser states, not a continuous demo video. Use docs/DEMO-SCRIPT.md for the recording sequence.

@@ -30,8 +30,9 @@ export function mountAssembly(doc = document, win = window) {
   let frame = 0, manualProgress = null;
   function paint(p) {
     const progress = reduce.matches ? 1 : Math.min(1, Math.max(0, Number.isFinite(p) ? p : 0));
-    layers.forEach((layer, i) => { layer.style.transform = assemblyPose(progress, i, reduce.matches, win.innerWidth <= 600); });
-    callouts.forEach((label,i)=>{label.style.transform=`translate3d(0px, ${assemblyOffset(progress,i,reduce.matches,win.innerWidth<=600)+(win.innerWidth<=600?75:90)}px, 0)`;label.style.opacity=String(.15+.85*progress);});
+    const compact=win.innerWidth<=600||win.innerHeight<=850;
+    layers.forEach((layer, i) => { layer.style.transform = assemblyPose(progress, i, reduce.matches, compact); });
+    callouts.forEach((label,i)=>{label.style.transform=`translate3d(0px, ${assemblyOffset(progress,i,reduce.matches,compact)+(compact?75:90)}px, 0)`;label.style.opacity=String(.15+.85*progress);});
     const active = Math.min(layers.length-1, Math.floor(progress * layers.length));
     labels.forEach((label, i) => label.classList.toggle('active', i === active));
     description.textContent = reduce.matches ? 'All layers are separated in this static view. The carrier and cover are concepts; actual sensing modules connect by wires.' : descriptions[active];

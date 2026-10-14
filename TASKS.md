@@ -8,7 +8,7 @@
 - [x] Browser dashboard, CSV/serial telemetry, local inference and inert review/rehearsal log
 - [ ] Optional Featherless synthetic-data reviewer with shared budget/secret protection
 - [ ] Adaption raw-data training configured and estimated; launch only within100 credits
-- [ ] End-to-end browser proof, release package and source/setup documentation
+- [x] End-to-end browser proof, release package and source/setup documentation
 - [ ] Muted demo, hardware/software limitations and overnight continuation if approved
 
 No therapy actuator or clinical infection score is in scope.
@@ -18,3 +18,7 @@ No therapy actuator or clinical infection score is in scope.
 - [x] Verified raw Adaption dataset uploaded; training remains pending provider quote
 - [x] Overnight continuation enabled8p.m.–5a.m.EDT
 - [ ] Physical assembly, KiCad DRC and measured sensor calibration (requires hardware/tools)
+
+- [x] Public GitHub repository pushed and CI passing
+- [x] Vercel production deployment publicly verified and linked to GitHub
+- [x] Devpost project write-up drafted; final video and event entry remain pending

@@ -1,0 +1,19 @@
+{
+  "checkedUTC": "2026-10-14T21:35:18.885800+00:00",
+  "url": "https://patchline-bench.vercel.app/",
+  "httpStatus": 200,
+  "requiresSignIn": false,
+  "browserChecks": [
+    "initial local-model inference",
+    "manual approval then inert rehearsal",
+    "sensor_fault estimate and hold disables approval/rehearsal"
+  ],
+  "browserErrors": 0,
+  "trainingScope": "synthetic signal families only",
+  "adaptionTrainingStarted": false,
+  "CI": {
+    "status": "success",
+    "url": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38641236912"
+  },
+  "gitAutoDeployConnected": true
+}

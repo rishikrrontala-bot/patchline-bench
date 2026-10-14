@@ -1,8 +1,8 @@
 {
-  "updatedUTC": "2026-10-14T17:30:44.992386+00:00",
+  "updatedUTC": "2026-10-14T21:38:57.385364+00:00",
   "scope": "Nonclinical dry-bench prototype",
-  "nodeTestsPassed": 30,
-  "adaptionWorkflowChecksPassed": 9,
+  "nodeTestsPassed": 31,
+  "adaptionWorkflowChecksPassed": 10,
   "firmwareModesCompiled": [
     "simulation",
     "bench"
@@ -25,5 +25,10 @@
   ],
   "portableArtifact": "artifacts/Patchline-Bench-v2.html",
   "portableBrowserVerification": "Direct file URL refused by browser policy; source app verified via normal localhost preview",
-  "explodedViewRevision": "Reference-style six-layer pale enclosure study, navy backdrop, numbered leaders and separate actual PCB"
+  "explodedViewRevision": "Reference-style six-layer pale enclosure study, navy backdrop, numbered leaders and separate actual PCB",
+  "liveURL": "https://patchline-bench.vercel.app/",
+  "repositoryURL": "https://github.com/rishikrrontala-bot/patchline-bench",
+  "devpostDraft": "devpost-submission.md",
+  "devpostPosted": false,
+  "publicDeploymentVerified": true
 }

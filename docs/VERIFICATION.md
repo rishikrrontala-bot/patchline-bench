@@ -1,6 +1,6 @@
 # Verification record
 
-Completed:30 Node tests; deterministic simulator validation across300 generated windows; analytic linear slope/time-translation tests; null/nonfinite/getter/schema rejection; disjoint1,800 run seeds; training-only scaler means; NumPy/JS inference parity from all3 families; manual review reset/one-use policy; serial discontinuity/status validation. C++17 native calibration core and transport tests cover signed conversion, NACK, short read, stuck conversion, timing, invalid/raw values, and both telemetry modes.
+Completed:31 Node tests; deterministic simulator validation across300 generated windows; analytic linear slope/time-translation tests; null/nonfinite/getter/schema rejection; disjoint1,800 run seeds; training-only scaler means; NumPy/JS inference parity from all3 families; manual review reset/one-use policy; serial discontinuity/status validation. C++17 native calibration core and transport tests cover signed conversion, NACK, short read, stuck conversion, timing, invalid/raw values, and both telemetry modes.
 
 Browser checks completed using the actual dashboard: initial local model load; review→virtual event; injected spike→fault hold with disabled approval; imported JSON→hold despite high shift likelihood. A screenshot is saved under proof/dashboard.jpg. Browser USB permission and real serial reception have not been exercised because no device exists.
 

@@ -52,3 +52,5 @@ test('controller switches to static reduced-motion and restores scroll when pref
  stop();
 });
 test('missing assembly is a safe no-op',()=>{assert.doesNotThrow(()=>mountAssembly({getElementById:()=>null},{})());});
+
+test('short desktop viewport uses the compact layer geometry',()=>{const f=fixture(false,1280);f.win.innerHeight=720;const stop=mountAssembly(f.doc,f.win);assert.equal(f.layers[0].style.transform,assemblyPose(0,0,false,true));f.slider.value='100';f.slider.emit('input');assert.equal(f.layers[5].style.transform,assemblyPose(1,5,false,true));stop();});

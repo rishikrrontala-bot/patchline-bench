@@ -33,7 +33,7 @@
     "train_on_inputs": false,
     "training_type": "lora"
   },
-  "offlineBoundaryChecksPassed": 9,
+  "offlineBoundaryChecksPassed": 10,
   "rawOriginalPairsVerifiedExactly": 1000,
   "launchGuard": "Requires exact provider quote at most 100 credits verified within two hours; exclusive launch claim and saved run prevent duplicate jobs"
 }
