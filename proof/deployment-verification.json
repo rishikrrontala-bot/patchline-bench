@@ -1,23 +1,27 @@
 {
-  "checkedUTC": "2026-10-14T21:41:07.810762+00:00",
+  "checkedUTC": "2026-10-15T02:37:51.191023+00:00",
   "url": "https://patchline-bench.vercel.app/",
   "httpStatus": 200,
   "requiresSignIn": false,
   "browserChecks": [
     "initial local-model inference",
-    "manual approval then inert rehearsal",
-    "sensor_fault estimate and hold disables approval/rehearsal"
+    "manual approval then one-use inert rehearsal",
+    "sensor_fault estimate and hold disables approval/rehearsal",
+    "imported synthetic fixture always held despite 99.6 percent shift likelihood",
+    "CSV exported through actual browser download; header, units and all 24 rows verified",
+    "1280 by 720: no horizontal overflow and all eight images loaded",
+    "keyboard End expands all six assembly layers"
   ],
   "browserErrors": 0,
   "trainingScope": "synthetic signal families only",
   "adaptionTrainingStarted": false,
   "CI": {
     "status": "success",
-    "testedCodeCommit": "f4eee1d1de32fa5c05d751860c56fc8a99b7b7b8",
-    "url": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38641876727"
+    "testedCodeCommit": "78fb3acd4d04d57b6f73905938eb2b07cb31cbd0",
+    "url": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38663466504"
   },
   "gitAutoDeployConnected": true,
-  "nodeTestsPassed": 31,
+  "nodeTestsPassed": 33,
   "adaptionWorkflowChecksPassed": 10,
   "privateRoutes": [
     {
@@ -38,5 +42,7 @@
     1280,
     720
   ],
-  "explodedLayerBottomsWithinStage": true
+  "explodedLayerBottomsWithinStage": true,
+  "browserWarnings": 0,
+  "credentialExclusionCheck": "Tracked files and nested source ZIP checked against existing private API key values; no matches"
 }
