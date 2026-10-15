@@ -38,4 +38,4 @@ $('serial').addEventListener('click',async()=>{
   if(serialReader){serialReader.releaseLock();serialReader=null;}if(serialPort){try{await serialPort.close();}catch{}serialPort=null;}fsm.clear();$('approve').disabled=true;$('rehearse').disabled=true;$('serial').disabled=!('serial' in navigator);$('disconnect').disabled=true;$('generate').disabled=!model;$('upload').disabled=false;$('serial-status').textContent='USB disconnected · last display is retained for inspection; approval revoked';
  }
 });
-setInterval(()=>{if(serialPort&&performance.now()-lastFrameAt>10000){fsm.clear();$('approve').disabled=true;$('rehearse').disabled=true;$('gate').textContent='HOLD';$('reason').textContent='No valid telemetry received for 10 seconds; display is stale';}},1000);
+setInterval(()=>{if(serialPort&&performance.now()-lastFrameAt>10000){frameBuffer.clear();fsm.clear();$('approve').disabled=true;$('rehearse').disabled=true;$('gate').textContent='HOLD';$('reason').textContent='No valid telemetry received for 10 seconds; display is stale';}},1000);

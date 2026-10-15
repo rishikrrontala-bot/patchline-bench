@@ -1,7 +1,7 @@
 {
-  "updatedUTC": "2026-10-15T00:05:55Z",
+  "updatedUTC": "2026-10-15T01:02:17.023948+00:00",
   "scope": "Nonclinical dry-bench prototype",
-  "nodeTestsPassed": 31,
+  "nodeTestsPassed": 33,
   "adaptionWorkflowChecksPassed": 10,
   "firmwareModesCompiled": [
     "simulation",
@@ -37,5 +37,10 @@
     "CI": "success",
     "testedCommit": "6f32079cf66d760e5f4b4782f38ae77647fc86b7",
     "runURL": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38642144020"
+  },
+  "latestImprovement": {
+    "change": "Telemetry arrival timeout clears buffered readings and requires a fresh 24-frame window",
+    "regressionTests": "Deterministic injected monotonic clock, 10001 ms pause, malformed JSON and backwards arrival clock",
+    "physicalUSBTested": false
   }
 }

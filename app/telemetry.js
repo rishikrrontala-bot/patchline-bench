@@ -8,4 +8,20 @@ export function parseFrame(line){
  if(!f.raw||Object.keys(f.raw).length!==3||['ph_v','moisture_v','glucose_v'].some(k=>!Object.hasOwn(f.raw,k)||(f.raw[k]!==null&&!Number.isFinite(f.raw[k]))))throw new Error('Invalid raw voltages');
  return f;
 }
-export function createFrameBuffer(){let frames=[],last=null;return {clear(){frames=[];last=null;},push(line){const f=parseFrame(line);if(last&&(f.t<=last.t||f.seq!==((last.seq+1)>>>0)||f.provenance!==last.provenance)){frames=[];last=null;throw new Error('Telemetry discontinuity; collecting a new window');}frames.push(f);last=f;if(frames.length>24)frames.shift();if(frames.length<24)return null;return validateWindow({schema:'patchline-bench-window-v1',provenance:'bench',seed:null,family:null,samples:frames.map(f=>Object.fromEntries(['t',...CHANNELS].map(k=>[k,f[k]])))});}};}
+// Arrival gaps use the browser's monotonic clock, independently of device timestamps.
+export function createFrameBuffer(now=()=>performance.now()){
+ let frames=[],last=null,lastArrival=null;
+ function clear(){frames=[];last=null;lastArrival=null;}
+ return {clear,push(line){
+  try{
+   const f=parseFrame(line),arrival=now();
+   if(!Number.isFinite(arrival))throw new Error('Invalid telemetry arrival clock');
+   if(lastArrival!==null&&(arrival-lastArrival>10000||arrival<lastArrival))clear();
+   if(last&&(f.t<=last.t||f.seq!==((last.seq+1)>>>0)||f.provenance!==last.provenance))throw new Error('Telemetry discontinuity; collecting a new window');
+   frames.push(f);last=f;lastArrival=arrival;
+   if(frames.length>24)frames.shift();
+   if(frames.length<24)return null;
+   return validateWindow({schema:'patchline-bench-window-v1',provenance:'bench',seed:null,family:null,samples:frames.map(f=>Object.fromEntries(['t',...CHANNELS].map(k=>[k,f[k]])))});
+  }catch(error){clear();throw error;}
+ }};
+}

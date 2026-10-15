@@ -23,3 +23,22 @@ test('24 firmware frames become bench provenance and hold',()=>{const b=createFr
 test('telemetry rejects unsafe, oversized, contradictory or discontinuous frames',()=>{assert.throws(()=>parseFrame('x'.repeat(4097)));const f=frame();f.hardware_actuation=true;assert.throws(()=>parseFrame(JSON.stringify(f)));f.hardware_actuation=false;f.status.ph='uncalibrated';assert.throws(()=>parseFrame(JSON.stringify(f)));const b=createFrameBuffer();b.push(JSON.stringify(frame(0)));assert.throws(()=>b.push(JSON.stringify(frame(2))),/discontinuity/);assert.equal(b.push(JSON.stringify(frame(3))),null);});
 test('reset invalidates manual approval',()=>{const r=createRehearsal();r.load(generateWindow('steady',9),{status:'estimated',label:'steady',confidence:.99});r.approve();r.clear();assert.throws(()=>r.run());assert.throws(()=>r.approve());});
 test('invalid model outputs fail closed',()=>{const w=generateWindow('steady',9);for(const p of [null,{}, {status:'estimated',label:'steady',confidence:NaN},{status:'estimated',label:'infection',confidence:1},{status:'estimated',label:'steady',confidence:2}])assert.equal(assess(w,p).state,'hold');});
+
+test('USB arrival timeout discards old frames even when device sequence stays contiguous',()=>{
+ let arrival=0;const b=createFrameBuffer(()=>arrival);let w;
+ for(let i=0;i<23;i++){arrival=i*100;assert.equal(b.push(JSON.stringify(frame(i))),null);}
+ arrival+=10001;
+ assert.equal(b.push(JSON.stringify(frame(23))),null);
+ for(let i=24;i<46;i++){arrival+=100;assert.equal(b.push(JSON.stringify(frame(i))),null);}
+ arrival+=100;w=b.push(JSON.stringify(frame(46)));
+ assert.equal(w.samples.length,24);assert.equal(w.samples[0].t,23);assert.equal(w.samples[23].t,46);
+});
+test('malformed telemetry and a backwards arrival clock restart collection',()=>{
+ let arrival=100;const b=createFrameBuffer(()=>arrival);
+ for(let i=0;i<23;i++)b.push(JSON.stringify(frame(i)));
+ assert.throws(()=>b.push('{broken'));
+ assert.equal(b.push(JSON.stringify(frame(23))),null);
+ arrival=99;assert.equal(b.push(JSON.stringify(frame(24))),null);
+ for(let i=25;i<47;i++)assert.equal(b.push(JSON.stringify(frame(i))),null);
+ assert.equal(b.push(JSON.stringify(frame(47))).samples[0].t,24);
+});
