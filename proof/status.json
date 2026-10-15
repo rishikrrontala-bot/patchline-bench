@@ -1,5 +1,5 @@
 {
-  "updatedUTC": "2026-10-14T21:38:57.385364+00:00",
+  "updatedUTC": "2026-10-15T00:05:55Z",
   "scope": "Nonclinical dry-bench prototype",
   "nodeTestsPassed": 31,
   "adaptionWorkflowChecksPassed": 10,
@@ -11,10 +11,10 @@
   "pcbDRCRun": false,
   "localSyntheticAccuracy": 0.8966666666666666,
   "explodedViewImplemented": true,
-  "browserVerifiedWidth": 521,
+  "browserVerifiedWidth": 1280,
   "motionEvidence": "proof/exploded-view.gif",
   "adaptionTrainingStarted": false,
-  "adaptionBlocker": "Provider quote requires unlocked Safari; user unlock requested",
+  "adaptionBlocker": "Exact provider quote remains unavailable; Safari controls are disabled. No training launched or credits committed.",
   "featherlessEstimatedCumulativeUSD": 0.5811,
   "overnightContinuationEnabled": true,
   "nextActions": [
@@ -30,5 +30,12 @@
   "repositoryURL": "https://github.com/rishikrrontala-bot/patchline-bench",
   "devpostDraft": "devpost-submission.md",
   "devpostPosted": false,
-  "publicDeploymentVerified": true
+  "publicDeploymentVerified": true,
+  "latestReleaseCheck": {
+    "checkedUTC": "2026-10-15T00:05:55Z",
+    "httpStatus": 200,
+    "CI": "success",
+    "testedCommit": "6f32079cf66d760e5f4b4782f38ae77647fc86b7",
+    "runURL": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38642144020"
+  }
 }

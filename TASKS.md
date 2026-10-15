@@ -9,12 +9,13 @@
 - [ ] Optional Featherless synthetic-data reviewer with shared budget/secret protection
 - [ ] Adaption raw-data training configured and estimated; launch only within100 credits
 - [x] End-to-end browser proof, release package and source/setup documentation
-- [ ] Muted demo, hardware/software limitations and overnight continuation if approved
+- [x] Hardware/software limitations documented and approved overnight continuation enabled
+- [ ] Continuous muted demo recording; final voiceover and public/unlisted video
 
 No therapy actuator or clinical infection score is in scope.
 
 - [x] Exploded sensing assembly with Unseen-inspired editorial design, scroll/keyboard controls and reduced-motion tests
-- [x] Both actual ESP32 target modes compile;30 Node checks plus9 Adaption workflow checks pass
+- [x] Both actual ESP32 target modes compile;31 Node checks plus10 Adaption workflow checks pass
 - [x] Verified raw Adaption dataset uploaded; training remains pending provider quote
 - [x] Overnight continuation enabled8p.m.–5a.m.EDT
 - [ ] Physical assembly, KiCad DRC and measured sensor calibration (requires hardware/tools)
