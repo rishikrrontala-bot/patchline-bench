@@ -15,3 +15,9 @@ Record the working browser and your voiceover separately, then combine them. Kee
 4:00–4:35 — Scalability. Inference runs locally on a fixed-size24-sample window with small matrices. Serial data is bounded; discontinuities reset collection, stale telemetry holds review. Adding real sensors needs reviewed calibration and appropriate interfaces. More users do not require uploading sensor readings to a central server in this version.
 
 4:35–5:00 — Business hypothesis and next validation. A research bench toolkit could serve student or early sensor teams that need reproducible acquisition and audit trails. That is a hypothesis, not proven demand. Next milestones are physical assembly/measurement, external user interviews and appropriately governed real-data research; patient treatment is outside this deliverable.
+
+## Finished cuts
+
+The edited silent videos are in `artifacts/demo/`: `Patchline-Bench-2m30s-silent.mp4` and `Patchline-Bench-5m00s-silent.mp4`. They use actual app captures, original source excerpts and saved evidence cards. Use `VOICEOVER-SHORT.md` for the 2:30 cut and `VOICEOVER-FULL.md` for the 5:00 cut. Record each chapter separately and align it to the timestamp headings in your editor. Export the combined narration and video, then upload Public or Unlisted for the submission. The silent cut alone does not contain a spoken technical explanation.
+
+The assembly portion uses eleven captured UI poses; the live workflow uses browser captures sampled at five frames per second. The final files are chapter-paced edits, encoded at 1280×720 and 30 output frames per second. `proof/demo-verification.json` records exact durations, stream decoding and the absence of audio. Raw local captures are excluded from the public repository. The local editing tools accept `FFMPEG=/path/to/ffmpeg`; rendering also requires Pillow and the macOS system fonts.

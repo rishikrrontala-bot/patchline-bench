@@ -22,3 +22,5 @@ proof/adaption-run.json
 proof/adaption-recommendation.json
 .vercel
 .env*
+
+proof/demo-capture/

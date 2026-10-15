@@ -10,7 +10,8 @@
 - [ ] Adaption raw-data training configured and estimated; launch only within100 credits
 - [x] End-to-end browser proof, release package and source/setup documentation
 - [x] Hardware/software limitations documented and approved overnight continuation enabled
-- [ ] Continuous muted demo recording; final voiceover and public/unlisted video
+- [x] Two edited silent demos (2:30 and 5:00) with matched timed voiceover scripts
+- [ ] Record user narration and upload public/unlisted final video
 
 No therapy actuator or clinical infection score is in scope.
 

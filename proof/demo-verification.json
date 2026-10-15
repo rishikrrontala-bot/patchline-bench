@@ -1,0 +1,180 @@
+{
+  "capture": "Actual public browser captures; the assembly uses eleven fully framed captured poses. Chapter-paced edited walkthrough with evidence cards. No generated UI outcomes or audio.",
+  "videos": [
+    {
+      "file": "artifacts/demo/Patchline-Bench-2m30s-silent.mp4",
+      "seconds": 150,
+      "chapters": [
+        {
+          "start": 0,
+          "duration": 15,
+          "scene": "hero",
+          "label": "01 / THE PROBLEM"
+        },
+        {
+          "start": 15,
+          "duration": 20,
+          "scene": "assembly",
+          "label": "02 / SIX-LAYER CONCEPT + ACTUAL PCB"
+        },
+        {
+          "start": 35,
+          "duration": 8,
+          "scene": "overview",
+          "label": "03 / LOCAL SIGNAL OBSERVATORY"
+        },
+        {
+          "start": 43,
+          "duration": 32,
+          "scene": "workflow",
+          "label": "03 / REVIEW \u2192 INERT EVENT \u2192 FAULT HOLD"
+        },
+        {
+          "start": 75,
+          "duration": 12,
+          "scene": "architecture",
+          "label": "04 / SEPARATE MODEL AND POLICY"
+        },
+        {
+          "start": 87,
+          "duration": 13,
+          "scene": "source",
+          "label": "04 / ACTUAL INFERENCE SOURCE"
+        },
+        {
+          "start": 100,
+          "duration": 15,
+          "scene": "evidence",
+          "label": "05 / HELD-OUT SIMULATION + MISSED FAULTS"
+        },
+        {
+          "start": 115,
+          "duration": 15,
+          "scene": "business",
+          "label": "06 / PROPOSED BUSINESS MODEL"
+        },
+        {
+          "start": 130,
+          "duration": 10,
+          "scene": "scale",
+          "label": "06 / LOCAL COMPUTE + NEXT VALIDATION"
+        },
+        {
+          "start": 140,
+          "duration": 10,
+          "scene": "close",
+          "label": "07 / BUILT BY RISHIK RONTALA"
+        }
+      ],
+      "bytes": 1430657,
+      "verifiedSeconds": 150.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "outputFPS": 30,
+      "audioStreams": 0,
+      "fullyDecoded": true
+    },
+    {
+      "file": "artifacts/demo/Patchline-Bench-5m00s-silent.mp4",
+      "seconds": 300,
+      "chapters": [
+        {
+          "start": 0,
+          "duration": 10,
+          "scene": "hero",
+          "label": "01 / PATCHLINE BENCH"
+        },
+        {
+          "start": 10,
+          "duration": 25,
+          "scene": "problem",
+          "label": "01 / THE RESEARCH PROBLEM"
+        },
+        {
+          "start": 35,
+          "duration": 40,
+          "scene": "assembly",
+          "label": "02 / CONCEPT ASSEMBLY + ACTUAL PCB"
+        },
+        {
+          "start": 75,
+          "duration": 12,
+          "scene": "overview",
+          "label": "03 / FOUR SYNTHETIC CHANNELS"
+        },
+        {
+          "start": 87,
+          "duration": 48,
+          "scene": "workflow",
+          "label": "03 / REVIEW \u2192 INERT EVENT \u2192 FAULT HOLD"
+        },
+        {
+          "start": 135,
+          "duration": 10,
+          "scene": "scale",
+          "label": "03 / IMPORTED + STALE SIGNALS STAY HELD"
+        },
+        {
+          "start": 145,
+          "duration": 20,
+          "scene": "architecture",
+          "label": "04 / MODEL + POLICY ARCHITECTURE"
+        },
+        {
+          "start": 165,
+          "duration": 20,
+          "scene": "source",
+          "label": "04 / ACTUAL INFERENCE SOURCE"
+        },
+        {
+          "start": 185,
+          "duration": 15,
+          "scene": "firmware",
+          "label": "04 / COMPILED FIRMWARE / UNTESTED HARDWARE"
+        },
+        {
+          "start": 200,
+          "duration": 23,
+          "scene": "evidence",
+          "label": "05 / SYNTHETIC MODEL EVIDENCE"
+        },
+        {
+          "start": 223,
+          "duration": 12,
+          "scene": "tests",
+          "label": "05 / EXECUTED SOFTWARE CHECKS"
+        },
+        {
+          "start": 235,
+          "duration": 27,
+          "scene": "business",
+          "label": "06 / PROPOSED BUSINESS / UNVALIDATED DEMAND"
+        },
+        {
+          "start": 262,
+          "duration": 18,
+          "scene": "scale",
+          "label": "06 / LOCAL SCALING + NEXT VALIDATION"
+        },
+        {
+          "start": 280,
+          "duration": 20,
+          "scene": "close",
+          "label": "07 / BUILT BY RISHIK RONTALA"
+        }
+      ],
+      "bytes": 2668594,
+      "verifiedSeconds": 300.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "outputFPS": 30,
+      "audioStreams": 0,
+      "fullyDecoded": true
+    }
+  ],
+  "verification": "Both complete streams decoded without errors; exact duration, 1280x720, 30fps output, zero audio streams. Working app sourced from 5fps captures; assembly uses eleven captured poses."
+}

@@ -1,5 +1,5 @@
 {
-  "updatedUTC": "2026-10-15T02:37:51.191023+00:00",
+  "updatedUTC": "2026-10-15T05:17:57.290771+00:00",
   "scope": "Nonclinical dry-bench prototype",
   "nodeTestsPassed": 33,
   "adaptionWorkflowChecksPassed": 10,
@@ -20,7 +20,7 @@
   "nextActions": [
     "Get exact Adaption training quote within100 credits; launch guarded single run only if total within cap",
     "Verify trained summarizer outputs against independent structured-output hold/review fixtures if training succeeds",
-    "Finish continuous muted demo with user voiceover",
+    "Record user narration over the finished silent demo and upload public/unlisted final video",
     "Preserve Next Founders original submission deadline and edition"
   ],
   "portableArtifact": "artifacts/Patchline-Bench-v2.html",
@@ -42,5 +42,17 @@
     "change": "Telemetry arrival timeout clears buffered readings and requires a fresh 24-frame window",
     "regressionTests": "Deterministic injected monotonic clock, 10001 ms pause, malformed JSON and backwards arrival clock",
     "physicalUSBTested": false
-  }
+  },
+  "silentDemos": [
+    {
+      "durationSeconds": 150,
+      "file": "artifacts/demo/Patchline-Bench-2m30s-silent.mp4",
+      "script": "docs/VOICEOVER-SHORT.md"
+    },
+    {
+      "durationSeconds": 300,
+      "file": "artifacts/demo/Patchline-Bench-5m00s-silent.mp4",
+      "script": "docs/VOICEOVER-FULL.md"
+    }
+  ]
 }
