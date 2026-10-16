@@ -58,7 +58,7 @@ for i,l in enumerate(labels):
 text(d,(58,592),'Simulator labels are not physiology or clinical validation.',27,TERRA)
 save('evidence',im)
 im,d=base('05','Tested software. Unmeasured hardware.','VERIFICATION')
-text(d,(58,247),'34',93,INK,'serif');text(d,(231,283),'project checks passing',32,INK)
+text(d,(58,247),'35',93,INK,'serif');text(d,(231,283),'project checks passing',32,INK)
 text(d,(58,370),'10',93,INK,'serif');text(d,(231,407),'offline Adaption workflow checks',32,INK)
 lines(d,(58,530),['Determinism · inference parity · review resets · fault recovery','No patient outcomes, assembled PCB test or clinical claim.'],26,gap=46)
 save('tests',im)
@@ -91,12 +91,13 @@ def render(version,timeline):
   dest=WORK/(version+'-'+str(n)+'.mp4');frames=int(duration*30)
   if name in clips:
    # Each frame is an actual browser screenshot. Timing is conformed to chapter duration.
-   rate=len(clips[name])/duration
+   rate=12.5 if name=='assembly' else len(clips[name])/duration
    inputs=['-framerate',str(rate),'-i',str(CAP/name/'%05d.png')]
    filt='[0:v]scale=1200:660:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:0:color=0xEFE6E1[base];[base][1:v]overlay=0:0,fps=30,tpad=stop_mode=clone:stop_duration=5,format=yuv420p[v]'
   else:
    inputs=['-loop','1','-framerate','30','-i',str(WORK/(name+'.png'))]
    filt='[0:v][1:v]overlay=0:0,fps=30,tpad=stop_mode=clone:stop_duration=5,format=yuv420p[v]'
+  if name=='assembly':filt=filt.replace('tpad=stop_mode=clone:stop_duration=5','tpad=start_mode=clone:start_duration=3:stop_mode=clone:stop_duration=60')
   run(inputs+['-i',str(WORK/'lower.png'),'-filter_complex',filt,'-map','[v]','-frames:v',str(frames),'-an','-c:v','libx264','-preset','fast','-crf','20','-threads','4',str(dest)])
   paths.append(dest);chapters.append({'start':elapsed,'duration':duration,'scene':name,'label':label});elapsed+=duration
  concat=WORK/(version+'.concat');concat.write_text(''.join("file '"+str(p)+"'\n" for p in paths))
@@ -104,5 +105,5 @@ def render(version,timeline):
  run(['-f','concat','-safe','0','-i',str(concat),'-c','copy','-movflags','+faststart',str(output)])
  assert elapsed==({'short':150,'full':300}[version]);return {'file':str(output.relative_to(ROOT)),'seconds':elapsed,'chapters':chapters,'bytes':output.stat().st_size}
 if __name__=='__main__':
- report={'capture':'Actual public browser captures; the assembly uses eleven fully framed captured poses. Chapter-paced edited walkthrough with evidence cards. No generated UI outcomes or audio.','videos':[render('short',short),render('full',full)]}
+ report={'capture':'Actual public browser captures; the assembly is a real click-triggered capture. Chapter-paced edited walkthrough with evidence cards. No generated UI outcomes or audio.','videos':[render('short',short),render('full',full)]}
  (ROOT/'proof/demo-verification.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))

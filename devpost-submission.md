@@ -36,7 +36,7 @@ I also uploaded 1,000 verified instruction pairs to Adaption for a separate nonc
 ## Technical evidence
 The held-out synthetic model accuracy is **89.7%**, with **89.4% macro F1**. The confusion matrix is published. It correctly identified all 100 steady and all 100 coordinated-shift test windows, but classified 31 of 100 injected sensor faults as steady. This is a material limitation, not a clinical accuracy claim.
 
-**34 automated project tests** cover deterministic generation, malformed inputs, missing data, analytic feature calculations, independent run seeds, training-only normalization, Python/JavaScript inference agreement, review-state resets, telemetry discontinuities, scroll controls and firmware transport failures.
+**35 automated project tests** cover deterministic generation, malformed inputs, missing data, analytic feature calculations, independent run seeds, training-only normalization, Python/JavaScript inference agreement, review-state resets, telemetry discontinuities, scroll controls and firmware transport failures.
 
 **10 additional offline Adaption workflow checks** cover credential redaction, redirects, exact training configuration, credit caps, stale quotes and duplicate-job prevention. They make no paid provider requests.
 

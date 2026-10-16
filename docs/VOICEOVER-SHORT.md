@@ -8,7 +8,7 @@ I'm Rishik, and this is Patchline Bench. My smart-bandage idea started with woun
 
 ## 0:15–0:35 — Exploded assembly
 
-The six concept layers close into one patch, from the carrier to the cover. The inspection link opens the actual passive sensing-board routing. The design uses an ESP32-S3, an analog converter, and a temperature module. These are design files; I haven't assembled or physically tested this hardware yet.
+I click Assemble patch to close the six concept layers, from the carrier to the cover. The inspection link opens the actual passive sensing-board routing. The design uses an ESP32-S3, an analog converter, and a temperature module. These are design files; I haven't assembled or physically tested this hardware yet.
 
 ## 0:35–1:15 — Working application
 
@@ -38,4 +38,4 @@ Next come physical measurements and user interviews. Patchline Bench makes failu
 
 Keep “synthetic” audible when discussing results. Pronounce NumPy as “num-pie.” ESP32-S3 can be read “E S P thirty-two S three”; ADC and I²C may be expanded if needed. Do not read timestamps, file names, or captions aloud.
 
-Spoken word count: **318** (whitespace count). Section counts: 35, 48, 80, 50, 32, 53, 20. Numerals and abbreviations expand in speech; rehearse once and use the available pauses.
+Spoken word count: **320** (whitespace count). Section counts: 35, 50, 80, 50, 32, 53, 20. Numerals and abbreviations expand in speech; rehearse once and use the available pauses.

@@ -1,5 +1,5 @@
 {
-  "capture": "Actual public browser captures; the assembly uses eleven fully framed captured poses. Chapter-paced edited walkthrough with evidence cards. No generated UI outcomes or audio.",
+  "capture": "Actual public browser captures; the assembly is a real click-triggered capture. Chapter-paced edited walkthrough with evidence cards. No generated UI outcomes or audio.",
   "videos": [
     {
       "file": "artifacts/demo/Patchline-Bench-2m30s-silent.mp4",
@@ -66,7 +66,7 @@
           "label": "07 / BUILT BY RISHIK RONTALA"
         }
       ],
-      "bytes": 1630285,
+      "bytes": 1498960,
       "verifiedSeconds": 150.0,
       "resolution": [
         1280,
@@ -165,7 +165,7 @@
           "label": "07 / BUILT BY RISHIK RONTALA"
         }
       ],
-      "bytes": 2896944,
+      "bytes": 2757795,
       "verifiedSeconds": 300.0,
       "resolution": [
         1280,
@@ -176,5 +176,5 @@
       "fullyDecoded": true
     }
   ],
-  "verification": "Both complete streams decoded without errors; exact duration, 1280x720, 30fps output, zero audio streams. Working app sourced from 5fps captures; assembly uses eleven captured poses."
+  "verification": "Both complete streams decoded without errors; exact duration, 1280x720, 30fps output, zero audio streams. Working app sourced from 5fps captures; assembly shows the actual click-triggered transition."
 }

@@ -1,7 +1,7 @@
 {
-  "updatedUTC": "2026-10-16T01:45:08.594014+00:00",
+  "updatedUTC": "2026-10-16T14:50:28.965402+00:00",
   "scope": "Nonclinical dry-bench prototype",
-  "nodeTestsPassed": 34,
+  "nodeTestsPassed": 35,
   "adaptionWorkflowChecksPassed": 10,
   "firmwareModesCompiled": [
     "simulation",
@@ -25,7 +25,7 @@
   ],
   "portableArtifact": "artifacts/Patchline-Bench-v2.html",
   "portableBrowserVerification": "Direct file URL refused by browser policy; source app verified via normal localhost preview",
-  "explodedViewRevision": "Reference-matched exploded-to-assembled patch with aligned six-layer closure, perspective shift, material depth and violet lighting",
+  "explodedViewRevision": "One-button reversible patch closure; no scroll-driven animation or long scroll section",
   "liveURL": "https://patchline-bench.vercel.app/",
   "repositoryURL": "https://github.com/rishikrrontala-bot/patchline-bench",
   "devpostDraft": "devpost-submission.md",
@@ -39,8 +39,8 @@
     "runURL": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38663466504"
   },
   "latestImprovement": {
-    "change": "Six layers now close into one patch during scroll, matching the three supplied reference states",
-    "checks": "34 project tests; monotonic no-crossing closure; real scroll and range; 1280x720 and390x844 browser layouts; no console errors",
+    "change": "Assemble patch / Open layers button replaces scroll and slider control",
+    "checks": "35 project tests; real native click and keyboard toggle; state persists after document scroll; no mobile overflow",
     "physicalUSBTested": false
   },
   "silentDemos": [

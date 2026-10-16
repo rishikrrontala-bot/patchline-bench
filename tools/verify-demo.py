@@ -23,6 +23,6 @@ canvas=Image.new('RGB',(1280,((len(samples)+3)//4)*204),'#101B2D');d=ImageDraw.D
 for i,(duration,start,im) in enumerate(samples):
  x=(i%4)*320;y=(i//4)*204;canvas.paste(ImageOps.fit(im,(320,180)),(x,y));d.text((x+8,y+185),str(duration)+'s cut / chapter at '+str(start)+'s',fill='white')
 canvas.save(root/'proof/demo-contact-sheet.jpg',quality=90)
-report['verification']='Both complete streams decoded without errors; exact duration, 1280x720, 30fps output, zero audio streams. Working app sourced from 5fps captures; assembly uses eleven captured poses.'
+report['verification']='Both complete streams decoded without errors; exact duration, 1280x720, 30fps output, zero audio streams. Working app sourced from 5fps captures; assembly shows the actual click-triggered transition.'
 (root/'proof/demo-verification.json').write_text(json.dumps(report,indent=2)+'\n')
 print('Verified both videos: 150.00 and 300.00 seconds, 1280x720, silent, all chapters present and streams fully decoded.')

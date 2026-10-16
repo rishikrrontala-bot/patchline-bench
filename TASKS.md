@@ -15,8 +15,8 @@
 
 No therapy actuator or clinical infection score is in scope.
 
-- [x] Exploded sensing assembly with Unseen-inspired editorial design, scroll/keyboard controls and reduced-motion tests
-- [x] Both actual ESP32 target modes compile;34 Node checks plus10 Adaption workflow checks pass
+- [x] Exploded sensing assembly with Unseen-inspired editorial design, Assemble patch / Open layers button, keyboard activation and reduced-motion tests
+- [x] Both actual ESP32 target modes compile;35 Node checks plus10 Adaption workflow checks pass
 - [x] Verified raw Adaption dataset uploaded; training remains pending provider quote
 - [x] Overnight continuation enabled8p.m.–5a.m.EDT
 - [ ] Physical assembly, KiCad DRC and measured sensor calibration (requires hardware/tools)

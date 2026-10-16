@@ -1,6 +1,8 @@
 {
-  "reference": "Three user images: exploded, partly seated, assembled",
-  "direction": "forward scroll closes; reverse scroll opens",
+  "interaction": "Click Assemble patch to close; click Open layers to reopen",
+  "scrollControlsAssembly": false,
+  "pinnedScrollRunway": false,
+  "durationMs": 1200,
   "browserViewports": [
     [
       1280,
@@ -11,11 +13,15 @@
       844
     ]
   ],
+  "distinctComputedAnimationFramesObserved": 11,
+  "keyboardChecks": {
+    "Enter": "open",
+    "Space": "assembled"
+  },
+  "afterDocumentScroll": "assembled",
   "horizontalOverflow": false,
   "consoleErrors": 0,
-  "scrollCheck": "0 \u219257 \u2192100 through ordinary page scrolling",
-  "keyboardRange": "Home, PageUp, End, exact corresponding transforms",
-  "reducedMotion": "Static exploded state; range disabled; no spatial animation",
-  "nodeTestsPassed": 34,
-  "physicalAssembly": "Concept only; no validated wearable claim"
+  "reducedMotion": "CSS disables all scene transitions; both button-selected states stay available",
+  "nodeTestsPassed": 35,
+  "physicalAssembly": "Illustrative concept only"
 }

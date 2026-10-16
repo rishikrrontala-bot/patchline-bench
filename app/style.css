@@ -64,3 +64,30 @@ html{scroll-behavior:auto;scroll-padding-top:20px}body{background:var(--paper);c
 /* Keep scene illumination attached to the pinned frame throughout the scroll. */
 .closure-scene .assembly-pin{background:none}
 .closure-scene .closure-light{background:linear-gradient(to bottom,#292144dd 0,transparent 25%,transparent 65%,#292144dd 100%),radial-gradient(ellipse at 52% 54%,#d8d3ec 0%,#a59bc7 47%,#5b507d 100%)}
+
+/* One deliberate click animates the scene; document scrolling has no role. */
+:root{--ease-in-out:cubic-bezier(.77,0,.175,1);--assembly-duration:1200ms}
+.closure-scene{height:auto;min-height:0}
+.closure-scene .assembly-pin{position:relative}
+.closure-scene .assembly-layer{transition:transform var(--assembly-duration) var(--ease-in-out)}
+.closure-scene .part-callout{transition:transform var(--assembly-duration) var(--ease-in-out),opacity 300ms var(--ease-out)}
+.closure-scene .closure-light{transition:opacity var(--assembly-duration) var(--ease-in-out)}
+.closure-scene .closure-ground{transition:transform var(--assembly-duration) var(--ease-in-out),opacity var(--assembly-duration) var(--ease-in-out)}
+#assembly-toggle{border:1px solid #e9e3f599;border-radius:999px;background:#f5f0ff0a;color:#fff;min-width:216px;min-height:48px;padding:12px 26px;font:12px Arial;letter-spacing:.04em}
+#assembly-toggle:focus-visible{outline:3px solid #fff;outline-offset:5px}
+@media(hover:hover) and (pointer:fine){#assembly-toggle:hover{background:#f3edf8;color:#292144}}
+@media(prefers-reduced-motion:reduce){.closure-scene .assembly-layer,.closure-scene .part-callout,.closure-scene .closure-light,.closure-scene .closure-ground{transition:none}}
+.closure-scene .assembly-layer[data-layer="0"]{transform:translate3d(-50%, 375.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="1"]{transform:translate3d(-50%, 297.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="2"]{transform:translate3d(-50%, 219.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="3"]{transform:translate3d(-50%, 141.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="4"]{transform:translate3d(-50%, 63.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="5"]{transform:translate3d(-50%, -15.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+@media(max-height:850px),(max-width:600px){
+.closure-scene .assembly-layer[data-layer="0"]{transform:translate3d(-50%, 255.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="1"]{transform:translate3d(-50%, 197.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="2"]{transform:translate3d(-50%, 139.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="3"]{transform:translate3d(-50%, 81.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="4"]{transform:translate3d(-50%, 23.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+.closure-scene .assembly-layer[data-layer="5"]{transform:translate3d(-50%, -35.0px, 0) rotateX(60deg) rotateZ(-16deg) scale(1)}
+}
