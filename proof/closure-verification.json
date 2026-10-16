@@ -1,0 +1,21 @@
+{
+  "reference": "Three user images: exploded, partly seated, assembled",
+  "direction": "forward scroll closes; reverse scroll opens",
+  "browserViewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "horizontalOverflow": false,
+  "consoleErrors": 0,
+  "scrollCheck": "0 \u219257 \u2192100 through ordinary page scrolling",
+  "keyboardRange": "Home, PageUp, End, exact corresponding transforms",
+  "reducedMotion": "Static exploded state; range disabled; no spatial animation",
+  "nodeTestsPassed": 34,
+  "physicalAssembly": "Concept only; no validated wearable claim"
+}

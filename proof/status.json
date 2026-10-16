@@ -1,7 +1,7 @@
 {
-  "updatedUTC": "2026-10-15T05:17:57.290771+00:00",
+  "updatedUTC": "2026-10-16T01:45:08.594014+00:00",
   "scope": "Nonclinical dry-bench prototype",
-  "nodeTestsPassed": 33,
+  "nodeTestsPassed": 34,
   "adaptionWorkflowChecksPassed": 10,
   "firmwareModesCompiled": [
     "simulation",
@@ -12,11 +12,11 @@
   "localSyntheticAccuracy": 0.8966666666666666,
   "explodedViewImplemented": true,
   "browserVerifiedWidth": 1280,
-  "motionEvidence": "proof/exploded-view.gif",
+  "motionEvidence": "proof/closure-transition.gif",
   "adaptionTrainingStarted": false,
   "adaptionBlocker": "Exact provider quote remains unavailable; Safari controls are disabled. No training launched or credits committed.",
   "featherlessEstimatedCumulativeUSD": 0.5811,
-  "overnightContinuationEnabled": true,
+  "overnightContinuationEnabled": false,
   "nextActions": [
     "Get exact Adaption training quote within100 credits; launch guarded single run only if total within cap",
     "Verify trained summarizer outputs against independent structured-output hold/review fixtures if training succeeds",
@@ -25,7 +25,7 @@
   ],
   "portableArtifact": "artifacts/Patchline-Bench-v2.html",
   "portableBrowserVerification": "Direct file URL refused by browser policy; source app verified via normal localhost preview",
-  "explodedViewRevision": "Reference-style six-layer pale enclosure study, navy backdrop, numbered leaders and separate actual PCB",
+  "explodedViewRevision": "Reference-matched exploded-to-assembled patch with aligned six-layer closure, perspective shift, material depth and violet lighting",
   "liveURL": "https://patchline-bench.vercel.app/",
   "repositoryURL": "https://github.com/rishikrrontala-bot/patchline-bench",
   "devpostDraft": "devpost-submission.md",
@@ -39,8 +39,8 @@
     "runURL": "https://github.com/rishikrrontala-bot/patchline-bench/actions/runs/38663466504"
   },
   "latestImprovement": {
-    "change": "Telemetry arrival timeout clears buffered readings and requires a fresh 24-frame window",
-    "regressionTests": "Deterministic injected monotonic clock, 10001 ms pause, malformed JSON and backwards arrival clock",
+    "change": "Six layers now close into one patch during scroll, matching the three supplied reference states",
+    "checks": "34 project tests; monotonic no-crossing closure; real scroll and range; 1280x720 and390x844 browser layouts; no console errors",
     "physicalUSBTested": false
   },
   "silentDemos": [

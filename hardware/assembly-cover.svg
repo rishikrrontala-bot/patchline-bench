@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220"><g><rect x="44" y="43" width="252" height="142" rx="48" fill="#bac4ca"/><rect x="44" y="35" width="252" height="142" rx="48" fill="#f2f1ec"/><path d="M86 65h155" stroke="#d9dedc" stroke-width="2"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" role="img" aria-labelledby="title desc">
+<title id="title">Rounded protective cover concept</title><desc id="desc">Illustrative pale shell and its shallow sidewall. Not a manufactured enclosure.</desc>
+<defs><linearGradient id="cover-face" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#fffefa"/><stop offset=".52" stop-color="#f4f3f5"/><stop offset="1" stop-color="#dedfeb"/></linearGradient><linearGradient id="cover-edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e2e2ed"/><stop offset="1" stop-color="#abb5ce"/></linearGradient></defs>
+<rect x="48" y="47" width="244" height="140" rx="47" fill="url(#cover-edge)" stroke="#a7b3c8" stroke-width="1.1"/>
+<rect x="48" y="34" width="244" height="140" rx="47" fill="url(#cover-face)" stroke="#eef0f9" stroke-width="1.2"/>
+<path d="M58 103V83c0-22 16-39 39-39h146c21 0 39 17 39 39" fill="none" stroke="#fff" stroke-width="2" opacity=".8"/>
+<path d="M83 157c7 5 17 7 28 7h119c13 0 23-2 31-8" fill="none" stroke="#cbd0df" stroke-width="1.1"/>
+<rect x="151" y="53" width="38" height="3" rx="1.5" fill="#c8ccda" opacity=".65"/>
+</svg>

@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220"><g><rect x="58" y="45" width="224" height="134" rx="28" fill="#313943"/><rect x="58" y="37" width="224" height="134" rx="28" fill="#536273"/><rect x="106" y="66" width="128" height="74" rx="12" fill="#111b2a"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" role="img" aria-labelledby="title desc">
+<title id="title">Open insulating spacer concept</title><desc id="desc">Illustrative thin gray ring with a central opening, aligned to the carrier.</desc>
+<defs><linearGradient id="spacer-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d3dce8"/><stop offset="1" stop-color="#9baec8"/></linearGradient></defs>
+<path d="M87 49h166a27 27 0 0 1 27 27v77a27 27 0 0 1-27 27H87a27 27 0 0 1-27-27V76a27 27 0 0 1 27-27Zm40 34a23 23 0 0 0-23 23v24a23 23 0 0 0 23 23h86a23 23 0 0 0 23-23v-24a23 23 0 0 0-23-23Z" fill="#7f95b5" fill-rule="evenodd"/>
+<path d="M87 43h166a27 27 0 0 1 27 27v77a27 27 0 0 1-27 27H87a27 27 0 0 1-27-27V70a27 27 0 0 1 27-27Zm40 34a23 23 0 0 0-23 23v24a23 23 0 0 0 23 23h86a23 23 0 0 0 23-23v-24a23 23 0 0 0-23-23Z" fill="url(#spacer-face)" fill-rule="evenodd" stroke="#d6e0ec" stroke-width="1"/>
+<path d="M105 124v-24a23 23 0 0 1 23-23h85a23 23 0 0 1 23 23" fill="none" stroke="#8196b5" stroke-width="1.4"/>
+<circle cx="79" cy="107" r="4" fill="#758caa"/><circle cx="261" cy="107" r="4" fill="#758caa"/>
+</svg>

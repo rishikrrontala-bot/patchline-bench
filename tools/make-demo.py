@@ -58,7 +58,7 @@ for i,l in enumerate(labels):
 text(d,(58,592),'Simulator labels are not physiology or clinical validation.',27,TERRA)
 save('evidence',im)
 im,d=base('05','Tested software. Unmeasured hardware.','VERIFICATION')
-text(d,(58,247),'33',93,INK,'serif');text(d,(231,283),'project checks passing',32,INK)
+text(d,(58,247),'34',93,INK,'serif');text(d,(231,283),'project checks passing',32,INK)
 text(d,(58,370),'10',93,INK,'serif');text(d,(231,407),'offline Adaption workflow checks',32,INK)
 lines(d,(58,530),['Determinism · inference parity · review resets · fault recovery','No patient outcomes, assembled PCB test or clinical claim.'],26,gap=46)
 save('tests',im)

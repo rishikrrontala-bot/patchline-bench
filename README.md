@@ -8,7 +8,7 @@ Run `npm start`, then open http://127.0.0.1:8790. Generate a reproducible steady
 
 The local classifier was trained from scratch on 1,200 simulated runs, selected using 300 validation runs, and evaluated on 300 independent test runs. Accuracy 89.7%, macro F1 89.4%. It missed 31 of 100 injected sensor faults; these metrics do not establish infection detection, medical benefit, or generalization to real sensors. A separate quality gate flags missing/held signals and prevents rehearsal for estimated faults or low confidence. Its review threshold is an explicit demo policy, not a clinical threshold.
 
-`npm test` runs 33 independent software tests. `python3 tools/board.py` produces the passive PCB draft, netlist and drawing with layer-aware connectivity checks. `node tools/generate-data.mjs` and `python3 tools/train.py` reproduce the simulation/model. Both firmware modes pass native host-stub checks, including I²C failures. Both firmware modes compile for the selected ESP32; hardware measurements remain pending.
+`npm test` runs 34 independent software tests. `python3 tools/board.py` produces the passive PCB draft, netlist and drawing with layer-aware connectivity checks. `node tools/generate-data.mjs` and `python3 tools/train.py` reproduce the simulation/model. Both firmware modes pass native host-stub checks, including I²C failures. Both firmware modes compile for the selected ESP32; hardware measurements remain pending.
 
 Read [LIMITATIONS.md](LIMITATIONS.md), [hardware/WIRING.md](hardware/WIRING.md) and [firmware/README.md](firmware/README.md) before touching hardware. The board has no input protection or patient-contact design and still requires KiCad DRC and electrical review.
 

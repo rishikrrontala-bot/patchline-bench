@@ -10,7 +10,7 @@ This prototype brings the board design, firmware, simulated signals, trained mod
 
 ## 0:35–1:15 — Exploded assembly and board
 
-Here, the six concept layers separate, revealing the carrier, spacer, mount, signal interface, controller, and cover. The numbered labels connect the visual model to each part. The green board beside it shows the actual passive hub routing.
+Here, the six concept layers come together: the carrier, spacer, mount, signal interface, controller, and cover. The numbered labels connect the visual model to each part. The inspection link opens the actual passive sensing-hub routing.
 
 The bench design uses an ESP32-S3 Feather, an ADS1115 analog converter, and a TMP117 temperature module. Their default addresses collide, so the wiring moves the temperature module to a different address. These are inspectable design files. I haven't assembled or physically tested the hardware yet.
 
@@ -38,7 +38,7 @@ The firmware checks bus transactions and conversion timeouts. Uncalibrated chann
 
 On the held-out synthetic set, accuracy is eighty-nine point seven percent. The confusion matrix also shows a serious limitation: thirty-one injected sensor faults were classified as steady. I publish that failure instead of turning the score into a medical claim.
 
-The release passes thirty-three project tests and ten offline Adaption workflow checks. Those cover data handling, inference agreement, review resets, telemetry, motion, and failure recovery. Compilation and software tests do not establish physical performance or clinical safety.
+The release passes thirty-four project tests and ten offline Adaption workflow checks. Those cover data handling, inference agreement, review resets, telemetry, motion, and failure recovery. Compilation and software tests do not establish physical performance or clinical safety.
 
 ## 3:55–4:40 — Business hypothesis and scalability
 
@@ -58,4 +58,4 @@ Patchline Bench gives me a foundation I can inspect, reproduce, and challenge. E
 
 Keep “synthetic” audible when discussing results. Pronounce NumPy as “num-pie.” ESP32-S3 can be read “E S P thirty-two S three”; ADC and I²C may be expanded if needed. Do not read timestamps, file names, or captions aloud.
 
-Spoken word count: **648** (whitespace count). Section counts: 75, 82, 146, 117, 77, 106, 45. Numerals and abbreviations expand in speech; rehearse once and use the available pauses.
+Spoken word count: **646** (whitespace count). Section counts: 75, 80, 146, 117, 77, 106, 45. Numerals and abbreviations expand in speech; rehearse once and use the available pauses.

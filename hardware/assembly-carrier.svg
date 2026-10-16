@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220"><g><rect x="30" y="39" width="280" height="155" rx="46" fill="#98adb6"/><rect x="30" y="30" width="280" height="155" rx="46" fill="#d3e2e4"/><rect x="54" y="47" width="232" height="118" rx="30" fill="none" stroke="#b7cbce" stroke-width="2"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 220" role="img" aria-labelledby="title desc">
+<title id="title">Dry bench carrier concept</title><desc id="desc">Illustrative blue-gray base plane with a shallow edge. No skin-contact or material validation is implied.</desc>
+<defs><linearGradient id="carrier-face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bfcfe0"/><stop offset=".52" stop-color="#aebfd9"/><stop offset="1" stop-color="#819fc7"/></linearGradient><linearGradient id="carrier-edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8198ba"/><stop offset="1" stop-color="#5b789f"/></linearGradient></defs>
+<rect x="67" y="51" width="206" height="126" rx="27" fill="url(#carrier-edge)" stroke="#7994b7" stroke-width="1"/>
+<rect x="67" y="43" width="206" height="126" rx="27" fill="url(#carrier-face)" stroke="#c4d2e9" stroke-width="1.2"/>
+<path d="M76 91V73c0-12 9-21 21-21h146c10 0 18 5 21 13" fill="none" stroke="#e7effc" opacity=".6" stroke-width="1.4"/>
+<path d="M82 155c4 4 9 5 17 5h142c9 0 14-2 19-7" fill="none" stroke="#7e9cc3" stroke-width="1"/>
+</svg>
